@@ -1,0 +1,34 @@
+@media (max-width: 1200px) {
+    .container { max-width: 960px; }
+    .hero-title { font-size: 2.8rem; }
+}
+
+@media (max-width: 992px) {
+    .container { max-width: 720px; }
+    .hero-container-split { grid-template-columns: 1fr; text-align: center; gap: 50px; }
+    .hero-subtitle { margin: 0 auto 30px auto; }
+    .hero-cta { justify-content: center; }
+    .countdown-wrapper { margin: 0 auto 30px auto; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 450px; }
+    .offer-container-box { grid-template-columns: 1fr; padding: 30px; }
+}
+
+@media (max-width: 768px) {
+    .container { max-width: 540px; }
+    .top-bar { display: none; }
+    .navbar { padding: 15px 0; }
+    .hamburger { display: flex; }
+    .nav-menu { position: fixed; top: 70px; left: -100%; width: 100%; height: calc(100vh - 70px); background: #090a0f; flex-direction: column; gap: 30px; padding: 40px; transition: 0.4s ease; border-top: 1px solid var(--border-glass); backdrop-filter: blur(20px); }
+    .nav-menu.active { left: 0; }
+    .info-grid { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
+    .form-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+}
+
+@media (max-width: 576px) {
+    .hero-title { font-size: 2.2rem; }
+    .card-domain-name { font-size: 1.7rem; }
+    .card-details-grid { grid-template-columns: 1fr; gap: 10px; }
+}
